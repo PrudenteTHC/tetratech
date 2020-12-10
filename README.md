@@ -15,6 +15,9 @@ Utilizando os serviços no browser:
 
 1. estimativa da população
 http://localhost:8080/estimativa
+passe o parâmetro:
+name:dataHora
+value: valor da data e hora para a estimativa da população.
 
 2. Últimas 10 chamadas na API.
 http://localhost:8080/ultimas
