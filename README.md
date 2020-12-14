@@ -7,6 +7,10 @@ Build:
 baixe o projeto clonando.
 execute na raiz do projeto: mvn clean instal
 
+Crie na pasta raiz C:\\
+o diretório: report
+e o arquivo vazio: tetraTechRest.txt
+
 Executar:
 No diretório target execute o seguinte:
 java -jar rest-service-0.0.1-SNAPSHOT.jar

@@ -1,8 +1,10 @@
-package com.tetratech.restservice.config;
+package com.tetratech.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.BufferingClientHttpRequestFactory;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
@@ -11,10 +13,6 @@ public class AppConfig {
 
 	@Bean
 	RestTemplate restTemplate() {
-		RestTemplate restTemplate = new RestTemplate();
-//		MappingJacksonHttpMessageConverter converter = new MappingJacksonHttpMessageConverter();
-//		converter.setObjectMapper(new ObjectMapper());
-//		restTemplate.getMessageConverters().add(converter);
-		return restTemplate;
+        return new RestTemplate(new BufferingClientHttpRequestFactory(new SimpleClientHttpRequestFactory()));
 	}
 }

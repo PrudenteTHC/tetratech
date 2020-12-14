@@ -1,4 +1,4 @@
-package com.tetratech.restservice.model;
+package com.tetratech.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
